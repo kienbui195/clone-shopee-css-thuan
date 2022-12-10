@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/bc4b936f27.js" crossorigin="anonymous"></script>
+
+    <!--Reset CSS default-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <!--Header navbar-->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li
+                            class="header__navbar-item header__navbar-item--qr header__navbar-item--qr-code header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng KSHop
+                            <div class="header__qr-code">
+                                <img src="./assets/img/shoppe-qr-code.png" alt="qr code" class="header__qr-code-img">
+                                <div class="header__qr-code-link">
+                                    <a href="#" class="header__qr-link-chplay">
+                                        <i class="fa-brands fa-google-play"></i>
+                                        Google Play
+                                    </a>
+                                    <a href="#" class="header__qr-link-appstore">
+                                        <i class="fa-brands fa-apple"></i>
+                                        Apps Store
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--disable">
+                                Kết nối
+                            </span>
+                            <a href="" class="header__navbar-item-fb"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="header__navbar-item-insta"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--view-noti">
+                            <a href="" class="header__navbar-item-menu">
+                                <i class="fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__noti">
+                                <header class="header__noti-header">
+                                    <h3>Thông báo mới nhất</h3>
+                                </header>
+                                <ul class="header__noti-list">
+                                    <li class="header__noti-item header__noti-item--viewed">
+                                        <a href="" class="header__noti-info">
+                                            <img src="./assets/img/gaming.jfif" alt="" class="header__noti-img">
+                                            <div class="header__noti-link">
+                                                <h6 class="header__noti-name">Mỹ phẩm Mỹ phẩm Mỹ phẩm Mỹ phẩm Mỹ phẩm Mỹ
+                                                    phẩm Mỹ phẩm Mỹ phẩm Mỹ phẩm</h6>
+                                                <p class="header__noti-body ">Abc Abc Abc Abc Abc Abc Abc Abc Abc</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__noti-item header__noti-item--viewed">
+                                        <a href="" class="header__noti-info">
+                                            <img src="./assets/img/gaming.jfif" alt="" class="header__noti-img">
+                                            <div class="header__noti-link">
+                                                <h6 class="header__noti-name">Mỹ phẩm</h6>
+                                                <p class="header__noti-body ">Abc</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-info">
+                                            <img src="./assets/img/gaming.jfif" alt="" class="header__noti-img">
+                                            <div class="header__noti-link">
+                                                <h6 class="header__noti-name">Mỹ phẩm</h6>
+                                                <p class="header__noti-body ">Abc</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__noti-view-all">
+                                    <a href="" class="header__noti-view-all-link">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-menu">
+                                <i class="fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate ">
+                            Đăng ký
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold">
+                            Đăng nhập
+                        </li>
+                    </ul>
+                </nav>
+                <!--Header with search-->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img src="assets/img/logo.jpg" alt="logo" class="header__logo-img">
+                    </div>
+                    <div class="header__search-bar">
+                        <div class="header__search-bar-wrap">
+                            <input type="text" class="header__search-bar--bar" placeholder="Tìm trong SHop này">
+
+                            <!--search bar history-->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-header">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Bàn phím cơ</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Màn hình</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Chuột</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__search-selection header__search-selection--choose">
+                            <span class="header__search-option">
+                                Trong Shop
+
+                            </span>
+                            <i class="header__search-option--icon fa-sharp fa-solid fa-chevron-down"></i>
+
+                            <ul class="header__search-list">
+                                <li class="header__search-item">
+                                    <span>Trong Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class=" header__search-item--active header__search-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn--btn fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__cart header__cart--productss">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <span class="header__cart-popup">
+                            3
+                        </span>
+                        <!--no cart : header__cart-empty-->
+                        <!--<div class="header__cart-empty">
+                            <img src="./assets/img/empty-cart.png" alt="Cart">
+                        </div>-->
+                        <div class="header__cart-products">
+                            <h3 class="header__cart-header">Sản phẩm đã thêm</h3>
+                            <div class="header__cart-container">
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/gaming.jfif" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-text">
+                                            <h5 class="header__cart-item-name">
+                                                Bàn phím Bàn phím Bàn phím 
+                                            </h5>
+                                            <p class="header__cart-item-content">
+                                                Bàn phím Bàn phím Bàn phím Bàn phím Bàn phím Bàn
+                                            </p>
+                                        </div>
+                                        <div class="header__cart-item-price">
+                                            <span class="header__cart-item-pcontent">
+                                               <span class="price">2.700.000 </span> 
+                                               x 1
+                                            </span>
+                                            <button class="header__cart-item-del">
+                                                Xóa
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/gaming.jfif" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-text">
+                                            <h5 class="header__cart-item-name">
+                                                Bàn phím Bàn phím Bàn phím 
+                                            </h5>
+                                            <p class="header__cart-item-content">
+                                                Bàn phím Bàn phím Bàn phím Bàn phím Bàn phím Bàn
+                                            </p>
+                                        </div>
+                                        <div class="header__cart-item-price">
+                                            <span class="header__cart-item-pcontent">
+                                               <span class="price">2.700.000 </span> 
+                                               x 1
+                                            </span>
+                                            <button class="header__cart-item-del">
+                                                Xóa
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/gaming.jfif" alt="" class="header__cart-item-img">
+                                        <a class="header__cart-item-text">
+                                            <h5 class="header__cart-item-name">
+                                                Bàn phím Bàn phím Bàn phím 
+                                            </h5>
+                                            <p class="header__cart-item-content">
+                                                Bàn phím Bàn phím Bàn phím Bàn phím Bàn phím Bàn
+                                            </p>
+                                        </a>
+                                        <div class="header__cart-item-price">
+                                            <span class="header__cart-item-pcontent">
+                                               <span class="price">2.700.000 </span> 
+                                               x 1
+                                            </span>
+                                            <button class="header__cart-item-del">
+                                                Xóa
+                                            </button>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="header__cart-footer">
+                                <button class="header__cart-btn">
+                                    Xem Giỏ Hàng
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container"></div>
+        <footer class="footer"></footer>
+    </div>
+
+
+    <!-- Modal layout -->
+    <!--
+    <div class="modal-custom">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="modal__content"> -->
+
+    <!-- Register Form-->
+    <!--<div class="auth-form">
+
+                    <div class="auth-form__cover">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng kí</h3>
+                            <span class="auth-form__btn-switch">Đăng nhập</span>
+
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Biệt danh" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="auth-form__liensce">
+                            <p class="auth-form__liensce-content">
+                                Bằng việc đăng kí bạn đã đồng ý với Shopee về
+                                <br />
+                                <a href="#" class="auth-form__liensce-content-dk">
+                                    Điều khoản dịch vụ
+                                </a>
+                                &
+                                <a href="#" class="auth-form__liensce-content-dk">
+                                    Chính sách bảo mật
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__oauth">
+                        <button class="oauth-fb btn">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối bằng Facebook
+                        </button>
+                        <button class="oauth-gg btn">
+                            <i class="fa-brands fa-google"></i>
+                            Kết nối bằng Google
+                        </button>
+                    </div>
+                </div>-->
+
+    <!-- Login form -->
+    <!--<div class="auth-form">
+
+                    <div class="auth-form__cover">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__btn-switch">Đăng kí</span>
+
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu" required>
+                            </div>
+                        </div>
+                        <div class="auth-form__extra">
+                            <a href="" class="auth-form__forget-pass">
+                                Quên mật khẩu
+                            </a>
+                            <a href="" class="auth-form__forget-pass auth-form__help">
+                                Cần trợ giúp?
+                            </a>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__oauth">
+                        <button class="oauth-fb btn">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Đăng nhập bằng Facebook
+                        </button>
+                        <button class="oauth-gg btn">
+                            <i class="fa-brands fa-google"></i>
+                            Đăng nhập bằng Google
+                        </button>
+                    </div>
+                </div>-->
+    <!--</div>
+        </div>
+    </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
